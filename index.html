@@ -229,15 +229,14 @@
             }
         }).setView([50.083217798441446, 14.448997723419357], initialZoom);
 
-        var OSmap = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        var OSmap = L.tileLayer('http://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}', {
         maxZoom: 19,
         opacity: 1
         }).addTo(map);
 
-        var Imagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        var Imagery = L.tileLayer('http://mt0.google.com/vt/lyrs=s&hl=en&x={x}&y={y}&z={z}', {
         maxZoom: 18,
-        attribution:'&copy; <a href="https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9" target="_blank">ESRI</a> | <a href="https://www.linkedin.com/in/david-skliba/?locale=en_US" target="_blank">David Šklíba</a>',
-        opacity: 0.7
+        opacity: 0.8
         });
 
         var baseLayers = {
