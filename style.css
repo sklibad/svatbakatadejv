@@ -4543,8 +4543,8 @@ figure {
 }
 
 :root {
-  --primary-font: Garamond, "Times New Roman", serif;
-  --primary-font-sans: Garamond, "Times New Roman", serif;
+  --primary-font: "EB Garamond", Garamond, "Times New Roman", serif;
+  --primary-font-sans: "EB Garamond", Garamond, "Times New Roman", serif;
 }
 
 html,
@@ -4553,7 +4553,8 @@ body button,
 body input,
 body optgroup,
 body select,
+body option,
 body textarea,
 body :not([class^="w-icon-"]):not([class*=" w-icon-"]) {
-  font-family: Garamond, "Times New Roman", serif !important;
+  font-family: "EB Garamond", Garamond, "Times New Roman", serif !important;
 }
