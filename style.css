@@ -1,7 +1,7 @@
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font-family: sans-serif;
+  font-family: Garamond;
 }
 
 body {
@@ -93,7 +93,7 @@ pre {
 }
 
 code, kbd, pre, samp {
-  font-family: monospace;
+  font-family: Garamond;
   font-size: 1em;
 }
 
@@ -221,10 +221,10 @@ html {
 
 body {
   color: #333;
-  background-color: #fff;
+  background-color: #f2f2f2;
   min-height: 100%;
   margin: 0;
-  font-family: var(--primary-font);
+  font-family: Garamond;
   font-size: 14px;
   line-height: 20px;
 }
@@ -2103,7 +2103,7 @@ textarea.w-input, textarea.w-select {
 }
 
 body {
-  background-color: #f1ece8;
+  background-color: #f2f2f2;
   color: #6d6f61;
   flex-direction: column;
   min-height: 100%;
@@ -2279,7 +2279,7 @@ figure {
 
 .paragraph-18 {
   color: #6d6f61;
-  font-family: Jost, sans-serif;
+  font-family: Garamond, sans-serif;
   font-size: 1.125rem;
   line-height: 1.5em;
 }
@@ -2357,7 +2357,7 @@ figure {
 
 .paragraph-16 {
   color: #6f6961;
-  font-family: var(--primary-font);
+  font-family: Garamond;
   font-size: 1.2rem;
   line-height: 1.5rem;
 }
@@ -2423,7 +2423,7 @@ figure {
 
 .footer-bottom-link {
   color: var(--text--default--dark-text);
-  font-family: Jost, sans-serif;
+  font-family: Garamond, sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   text-decoration: none;
@@ -2472,14 +2472,14 @@ figure {
 
 .paragraph-20 {
   color: #6d6f61;
-  font-family: Jost, sans-serif;
+  font-family: Garamond, sans-serif;
   font-size: 1.25rem;
   line-height: 1.4em;
 }
 
 .field-label {
   margin-bottom: .5rem;
-  font-family: Jost, sans-serif;
+  font-family: Garamond, sans-serif;
   font-size: .9rem;
   line-height: 1.3em;
   display: inline-block;
@@ -2512,7 +2512,7 @@ figure {
   min-height: 3rem;
   margin-bottom: 0;
   padding: .5rem .75rem;
-  font-family: Jost, sans-serif;
+  font-family: Garamond, sans-serif;
   font-size: .9rem;
   line-height: 1.5em;
   transition: border .3s;
@@ -2745,7 +2745,7 @@ figure {
 .rich-text-block h3 {
   margin-top: 40px;
   margin-bottom: 16px;
-  font-family: Work Sans;
+  font-family: Garamond, sans-serif;
   font-size: 2.5rem;
 }
 
@@ -2762,7 +2762,7 @@ figure {
 }
 
 .rich-text-block li {
-  font-family: Jost, sans-serif;
+  font-family: Garamond, sans-serif;
 }
 
 .rich-text-block a {
@@ -2923,7 +2923,7 @@ figure {
 
 .rsvp-text-container {
   border: 1px solid var(--brand--primary--action);
-  background-color: #fbfaf8;
+  background-color: #ffffff;
   flex-flow: column;
   justify-content: flex-end;
   align-items: stretch;
@@ -3477,8 +3477,8 @@ figure {
 }
 
 .hero {
-  background-color: #e3d6ce;
-  padding-top: 3rem;
+  background-color: #dddddd;
+  padding-top: 3rem;  
   padding-bottom: 3rem;
 }
 
@@ -3546,6 +3546,9 @@ figure {
   z-index: 4;
   aspect-ratio: 2 / 3;
   object-fit: cover;
+  object-position: center center;
+  transform: scale(1.70); /* přiblížení obrázku */
+  transform-origin: center 60%;
   width: 100%;
   position: relative;
 }
@@ -4531,4 +4534,26 @@ figure {
     max-width: 760px;
     margin: 1.5rem auto 0;
     padding-top: 0;
+}
+
+.heading-subtitle {
+  font-size: clamp(20px, 3vw, 32px);
+  line-height: 1.2;
+  display: inline-block;
+}
+
+:root {
+  --primary-font: Garamond, "Times New Roman", serif;
+  --primary-font-sans: Garamond, "Times New Roman", serif;
+}
+
+html,
+body,
+body button,
+body input,
+body optgroup,
+body select,
+body textarea,
+body :not([class^="w-icon-"]):not([class*=" w-icon-"]) {
+  font-family: Garamond, "Times New Roman", serif !important;
 }
